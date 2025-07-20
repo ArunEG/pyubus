@@ -1,0 +1,3 @@
+# PyUbus Native C Extension - Minimal Dependencies
+# The C extension handles all communication directly with libubus
+# No Python dependencies required for core functionality 

@@ -1,0 +1,67 @@
+# PyUbus - Native C Extension Project
+# Comprehensive .gitignore for Python C extension development
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions and build artifacts
+*.c.o
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyUbus specific build artifacts
+pyubus/c_extension/build/
+pyubus/c_extension/*.so
+pyubus/c_extension/*.o
+ubus_native*.so
+
+# Python development
+.pytest_cache/
+.coverage
+.tox/
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+
+# Documentation builds
+docs/_build/
+site/
+
+# OpenWrt build artifacts (if building locally)
+*.ipk
+*.bin
+
+# Temporary files
+*.tmp
+*.log
+.cache/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db 

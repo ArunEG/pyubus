@@ -1,0 +1,32 @@
+config PACKAGE_python3-pyubus
+	bool "python3-pyubus - Python interface for OpenWrt ubus"
+	depends on PACKAGE_python3-light
+	select PACKAGE_python3-urllib3
+	select PACKAGE_python3-certifi
+	select PACKAGE_python3-requests
+	help
+	  PyUbus provides a comprehensive Python interface for interacting with 
+	  OpenWrt's ubus (micro bus architecture) via HTTP/JSON-RPC.
+	  
+	  This package replaces the need for subprocess calls to the ubus 
+	  command-line tool with a clean, Pythonic API that supports:
+	  
+	  * Session management and authentication
+	  * Comprehensive error handling with specific exception types
+	  * Context manager support for resource management
+	  * Command-line interface similar to native ubus
+	  * Type hints for better IDE integration
+	  
+	  The package includes:
+	  - Python library (pyubus)
+	  - Command-line tool (pyubus)
+	  - Configuration via UCI (/etc/config/pyubus)
+	  - Init script for service management
+	  
+	  Useful for automation scripts, monitoring tools, and custom 
+	  management interfaces that need to interact with OpenWrt's 
+	  system services.
+	  
+	  Size: ~50KB + dependencies (~2-5MB)
+	  
+	  https://github.com/ArunEG/pyubus 
